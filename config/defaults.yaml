@@ -1,0 +1,6 @@
+defaults:
+  - model: model
+  - training: training
+  - wandb: wandb
+  - config: config
+

@@ -1,0 +1,5 @@
+# @package _global_
+seed: 42
+device: cpu  # cpu, cuda, mps
+experiment_name: default_experiment
+
