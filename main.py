@@ -10,9 +10,6 @@ from config.config_schema import Config
 @hydra.main(version_base=None, config_path="config", config_name="defaults")
 def main(cfg: Config) -> None:
     """Main function with Hydra configuration."""
-    # Convert OmegaConf to structured config (optional, for type safety)
-    # config = OmegaConf.structured(Config(**OmegaConf.to_container(cfg, resolve=True)))
-
     wandb.init(
         project=cfg.wandb.project,
         entity=cfg.wandb.entity,

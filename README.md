@@ -83,6 +83,10 @@ roboml-research-template/
 └── main.py              # Entry point
 ```
 
+## Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
 ## License
 
 See LICENSE file for details.
