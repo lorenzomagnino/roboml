@@ -11,7 +11,7 @@ help:
 	@echo "  make clean                - Clean cache files"
 
 install:
-	uv pip install hydra-core wandb torch omegaconf ruff black pytest pre-commit
+	uv pip install hydra-core wandb torch omegaconf ruff black pytest pre-commit rich
 
 run:
 	uv run python main.py
