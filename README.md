@@ -45,6 +45,11 @@ make install
 make pre-commit-install
 ```
 
+### Hands on
+```bash
+python main.py
+```
+
 ### Configuration
 
 Configuration files are located in the `config/` directory:
