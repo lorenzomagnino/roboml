@@ -35,6 +35,8 @@ cd roboml-research-template
 
 2. Install dependencies:
 ```bash
+uv venv
+source .venv/bin/activate
 make install
 ```
 
