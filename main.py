@@ -21,8 +21,8 @@ def init_wandb(cfg: Config) -> None:
 def main(cfg: Config) -> None:
     """Main function with Hydra configuration."""
 
-    print_config_table(cfg, style="tree")
-    # Alternative: use table format with print_config_table(cfg, style="table")
+    print_config_table(cfg, style="table")
+    # Alternative: use tree format with print_config_table(cfg, style="tree")
 
     # Optional: init_wandb(cfg)
 
