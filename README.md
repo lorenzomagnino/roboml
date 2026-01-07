@@ -40,7 +40,7 @@ source .venv/bin/activate
 make install
 ```
 
-**Note**: This template installs dependencies directly rather than using `pip install -e ".[dev]"` because it's structured as a template repository, not an installable Python package. The editable install would fail because hatchling can't find a package directory matching the project name (`roboml_research_template/`).
+**Note**: This template installs dependencies directly rather than using `pip install -e ".[dev]"` because it's structured as a template repository, not an installable Python package.
 
 3. (Optional) Install pre-commit hooks:
 ```bash
