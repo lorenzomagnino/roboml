@@ -9,6 +9,7 @@ dependencies = [
     "wandb>=0.15.0",
     "torch>=2.0.0",
     "omegaconf>=2.3.0",
+    "rich>=13.0.0",
 ]
 
 [project.optional-dependencies]
@@ -41,4 +42,3 @@ target-version = ["py38"]
 # warn_return_any = true
 # warn_unused_configs = true
 # disallow_untyped_defs = false
-

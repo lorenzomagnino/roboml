@@ -2,27 +2,31 @@
 
 import hydra
 import wandb
-from omegaconf import OmegaConf
 
 from config.config_schema import Config
+from config.config_utils import print_config_table
+
+
+def init_wandb(cfg: Config) -> None:
+    """Initialize WandB."""
+    wandb.init(
+        project=cfg.logging.wandb.project,
+        entity=cfg.logging.wandb.entity,
+        mode=cfg.logging.wandb.mode,
+        tags=cfg.logging.wandb.tags,
+    )
 
 
 @hydra.main(version_base=None, config_path="config", config_name="defaults")
 def main(cfg: Config) -> None:
     """Main function with Hydra configuration."""
-    wandb.init(
-        project=cfg.wandb.project,
-        entity=cfg.wandb.entity,
-        mode=cfg.wandb.mode,
-        tags=cfg.wandb.tags,
-        config=OmegaConf.to_container(cfg, resolve=True),
-        name=cfg.experiment_name,
-    )
-    print("Configuration:")
-    print(OmegaConf.to_yaml(cfg))
+
+    print_config_table(cfg, style="tree")
+    # Alternative: use table format with print_config_table(cfg, style="table")
+
+    # Optional: init_wandb(cfg)
 
     # TODO: Add your training/inference logic here
-    print("Main function executed successfully!")
 
 
 if __name__ == "__main__":
