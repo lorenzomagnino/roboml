@@ -17,6 +17,7 @@ Projects that used RoboML template:
 
 [![proteinRL](https://img.shields.io/badge/lorenzomagnino-proteinRL-4c1d95?style=flat-square&logo=github&logoColor=white)](https://github.com/lorenzomagnino/proteinRL)
 [![dedaFP](https://img.shields.io/badge/lorenzomagnino-dedaFP-4c1d95?style=flat-square&logo=github&logoColor=white)](https://github.com/lorenzomagnino/dedaFP)
+[![Bench-MFG](https://img.shields.io/badge/lorenzomagnino-Bench--MFG-4c1d95?style=flat-square&logo=github&logoColor=white)](https://github.com/lorenzomagnino/Bench-MFG)
 
 Let me know if you use this template!!
 
